@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // $("#btn-signup").css("opacity", "0.5");
 
-  //button disable, enable
+  //button disable and enable
   $("#cpassword").on("keyup", function () {
     if ($("#cpassword").val() == $("#ipassword").val()) {
       $("#btn-signup").prop("disabled", false);
@@ -19,24 +19,26 @@ $(document).ready(function () {
   });
 
   //button color
-  $("#ipassword").on("keyup", function() {
+  $("#ipassword").on("keyup", function () {
     if ($("#ipassword").val() == $("#cpassword").val()) {
-      $("#btn-signup").on('mouseenter', function() {
-        $("#btn-signup").css('background-color', '#05A3EA')
+      $("#btn-signup").on("mouseenter", function () {
+        $("#btn-signup").css("background-color", "#05A3EA");
       });
-    } else $("#btn-signup").on('mouseleave', function() {
-      $("#btn-signup").css('background-color', '#08689F')
-    });
+    } else
+      $("#btn-signup").on("mouseenter", function () {
+        $("#btn-signup").css("background-color", "#05A3EA");
+      });
   });
 
   $("#cpassword").on("keyup", function () {
     if ($("#cpassword").val() == $("#ipassword").val()) {
-      $("#btn-signup").on('mouseenter', function() {
-        $("#btn-signup").css('background-color', '#05A3EA')
+      $("#btn-signup").on("mouseenter", function () {
+        $("#btn-signup").css("background-color", "#05A3EA");
       });
-    } else $("#btn-signup").on('mouseleave', function() {
-      $("#btn-signup").css('background-color', '#08689F')
-    });
+    } else
+      $("#btn-signup").on("mouseenter", function () {
+        $("#btn-signup").css("background-color", "#05A3EA");
+      });
   });
 
   //message
