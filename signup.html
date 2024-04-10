@@ -114,19 +114,19 @@
                 autocomplete="off"
               />
               <!-- eye icon -->
-              <button
+              <!-- <button
                 class="absolute flex justify-center -my-7 ml-64 opacity-20"
                 type="button"
                 onclick="iPassVisibility()"
-              >
-                <img
+              > -->
+              <!-- <img
                   src="img/visibility_off.png"
                   width="70%"
                   height="30%"
                   alt=""
                   id="eyecon"
-                />
-              </button>
+                /> -->
+              <!-- </button> -->
               <!-- confirm password field -->
               <input
                 class="p-2 rounded-md w-full mt-4"
@@ -143,14 +143,14 @@
               <button
                 class="absolute flex justify-center -mt-7 ml-64 opacity-20"
                 type="button"
-                onclick="cPassVisibility()"
+                onclick="pwVisibility()"
               >
                 <img
                   src="img/visibility_off.png"
                   width="70%"
                   height="30%"
                   alt=""
-                  id="eyecon2"
+                  id="eyecon"
                 />
               </button>
               <!-- notification for password matching -->
@@ -208,28 +208,25 @@
 
     <!-- js for password visibility -->
     <script>
-      function iPassVisibility() {
-        const x = document.getElementById("ipassword");
-        const y = document.getElementById("eyecon");
+      function pwVisibility() {
+        var x = document.getElementById("ipassword");
+        var y = document.getElementById("eyecon");
+        var z = document.getElementById("cpassword");
 
         if (x.type === "password") {
           x.type = "text";
-          y.src = "img/visibility.png";
+          eyecon.src = "img/visibility.png";
         } else {
           x.type = "password";
-          y.src = "img/visibility_off.png";
+          eyecon.src = "img/visibility_off.png";
         }
-      }
-      function cPassVisibility() {
-        const z = document.getElementById("cpassword");
-        const a = document.getElementById("eyecon2");
 
         if (z.type === "password") {
           z.type = "text";
-          a.src = "img/visibility.png";
+          eyecon.src = "img/visibility.png";
         } else {
           z.type = "password";
-          a.src = "img/visibility_off.png";
+          eyecon.src = "img/visibility_off.png";
         }
       }
     </script>
