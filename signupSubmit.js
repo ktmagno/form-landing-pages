@@ -21,7 +21,7 @@ $(document).ready(function () {
   //button color
   $("#ipassword").on("keyup", function () {
     if ($("#ipassword").val() == $("#cpassword").val()) {
-      $("#btn-signup").css("opacity", "1");
+      $("#btn-signup").css({ "background-color": "#05A3EA", opacity: "1" });
     } else $("#btn-signup").css("opacity", "0.5");
   });
 
@@ -34,13 +34,15 @@ $(document).ready(function () {
   //message
   $("#ipassword").on("keyup", function () {
     if ($("#ipassword").val() == $("#cpassword").val()) {
-      $("#message").text("Passwords match").css("color", "green");
+      $("#message").text("Passwords match!").css("color", "green");
+      $("#btn-signup").css("opacity", "1");
     } else $("#message").text("Passwords do not match").css("color", "red");
   });
 
   $("#cpassword").on("keyup", function () {
     if ($("#cpassword").val() == $("#ipassword").val()) {
       $("#message").text("Passwords match!").css("color", "green");
+      $("#btn-signup").css("opacity", "1");
     } else $("#message").text("Passwords do not match").css("color", "red");
   });
 });
