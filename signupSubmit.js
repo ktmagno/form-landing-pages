@@ -26,7 +26,7 @@ $(document).ready(function () {
       });
     } else
       $("#btn-signup").on("mouseenter", function () {
-        $("#btn-signup").css("background-color", "#05A3EA");
+        $("#btn-signup").css("background-color", "#08689F");
       });
   });
 
@@ -37,7 +37,7 @@ $(document).ready(function () {
       });
     } else
       $("#btn-signup").on("mouseenter", function () {
-        $("#btn-signup").css("background-color", "#05A3EA");
+        $("#btn-signup").css("background-color", "#08689F");
       });
   });
 
