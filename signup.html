@@ -95,13 +95,14 @@
               required
               type="email"
               title="Please enter a valid email"
+              pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,}$"
               id="email"
               name="email"
               placeholder="Email"
               autocomplete="off"
             />
-            <p class="text-xs text-gray-600 ml-1 -mt-2 inline-block p-1">
-              e.g., prefix@domain.com
+            <p class="text-xs text-gray-600 ml-1 -mt-4 inline-block p-1">
+              e.g., example@mail.com
             </p>
             <!-- enter password field -->
             <div class="relative">
@@ -109,8 +110,8 @@
                 class="p-2 rounded-md w-full"
                 required
                 type="password"
-                title="Must be at least 8 characters"
-                pattern=".{8,}"
+                title="Must be at least 8 characters, with UPPERCASE, lowercase, number, and symbol"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
                 name="password"
                 id="ipassword"
                 placeholder="Enter Password"
@@ -135,7 +136,7 @@
                 class="p-2 rounded-md w-full mt-4"
                 required
                 type="password"
-                pattern=".{8,}"
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
                 title="Must be the same as entered password"
                 name="password"
                 id="cpassword"
@@ -159,9 +160,10 @@
               <!-- notification for password matching -->
               <p
                 id="message"
-                class="text-xs text-gray-600 ml-1 mt-1.5 inline-block p-1"
+                class="text-xs text-gray-600 ml-1 mt-1 inline-block p-1"
               >
-                Must be at least 8 characters
+                Must be at least 8 characters, with UPPERCASE, lowercase,
+                number, and symbol
               </p>
             </div>
             <!-- sign up button -->
@@ -209,7 +211,7 @@
       <p>Copyright &copy; 2024 companyName</p>
     </div>
 
-    <!-- js for password visibility -->
+    <!-- password visibility -->
     <script>
       function iPassVisibility() {
         var x = document.getElementById("ipassword");
