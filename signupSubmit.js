@@ -21,22 +21,22 @@ $(document).ready(function () {
   //button color
   $("#ipassword").on("keyup", function () {
     if ($("#ipassword").val() == $("#cpassword").val()) {
-      $("#btn-signup").on("mouseenter", function () {
+      $("#btn-signup").on("mouseover", function () {
         $("#btn-signup").css("background-color", "#05A3EA");
       });
     } else
-      $("#btn-signup").on("mouseenter", function () {
+      $("#btn-signup").on("mouseout", function () {
         $("#btn-signup").css("background-color", "#08689F");
       });
   });
 
   $("#cpassword").on("keyup", function () {
     if ($("#cpassword").val() == $("#ipassword").val()) {
-      $("#btn-signup").on("mouseenter", function () {
+      $("#btn-signup").on("mouseover", function () {
         $("#btn-signup").css("background-color", "#05A3EA");
       });
     } else
-      $("#btn-signup").on("mouseenter", function () {
+      $("#btn-signup").on("mouseout", function () {
         $("#btn-signup").css("background-color", "#08689F");
       });
   });
