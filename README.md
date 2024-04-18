@@ -1,6 +1,6 @@
-# forms-landing-pages
+# Forms
 
-Login, Sign Up, and Forgot Password landing pages
+Login, Sign Up, and Forgot Password
 
 ### Special Features:
 
