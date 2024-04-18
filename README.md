@@ -13,20 +13,6 @@
 - [Signup](https://ktmagno.github.io/form-landing-pages/signup.html)
 - [Forgot Password](https://ktmagno.github.io/form-landing-pages/forgot-pw.html)
 
-### Installation
-
----
-
-Feel free to download and use it if you like
-
-### Technologies Used:
-
----
-
-- HTML
-- Tailwind CSS
-- Bootstrap icons
-- JavaScript / jQuery
 
 ### Special Features:
 
